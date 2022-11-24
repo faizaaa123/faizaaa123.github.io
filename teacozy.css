@@ -1,165 +1,111 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
+    font-family: Helvetica;
+    color: seashell; 
     text-align: center;
-}
-
-/* GLOBAL STYLES */
-
- * {
-    box-sizing: border-box;
-    list-style: none;
+    background-color: black; 
+    opacity: 0.9;
     margin: 0;
     padding: 0;
- }
+}
 
-/* HEADER STYLES */
-
-.header-wrap {
-    height: 69px;
-    display: flex;
-    position: fixed;
+header {
     background-color: black;
-    z-index: 5;
+    display: flex; 
+    position: fixed; 
     width: 100%;
-    border-bottom: 1px solid seashell;
+    /* for up-down alignment */
+    align-items: center;
+    /* for let-right alignment */
     justify-content: space-between;
-    align-items: center;   
 }
 
-.logo-img {
-    display: flex;
-    position: relative;
+#logo-image {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 10px;
-    height: 50px;   
 }
 
-.nav-wrap {
-    padding-right: 10px;
-    text-decoration: underline;
-    font-weight: lighter;
-    cursor: pointer;  
+#nav-bar li {
+    list-style: none;
+    margin-right: 10px;
+    padding: 0px 15px;
+    display: inline-block;
 }
 
-.nav-items {
-    display: flex;
-    gap: 1.5rem; 
-}
-
-.nav-items li a {
+#nav-bar li a {
+    text-decoration: none;
     color: seashell;
 }
 
-/* MISSION STYLES */
-
-.mission-container {
+#mission-statement {
+    margin: 0 auto;
+    display: flex;
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    width: 80%;
     background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    margin: 0 auto;
-    width: 1200px;
+    background-position: center;
     height: 700px;
-    background-color: black;
-    align-items: center;
     justify-content: center;
 }
 
-.mission-title-wrapper {
+.text-over {
+    margin: auto;
     background-color: black;
     width: 100%;
+    padding: 0px 20px;
 }
 
-/* TEA MONTH STYLES */
-
-.tea-of-the-month-container {
-    max-width: 1000px;
-    align-items: center;
-    justify-content: center;
+#tea-of-the-month {
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin: 0 auto;
-    padding: 80px 0;
+    width: 80%;
 }
 
-h2, h4 {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.tea-images {
+    margin: 0 5px;
+    display: inline-block;
 }
 
-.main-image-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.image-wrap {
-    padding-bottom: 10px;
-    padding-top: 20px;
-}
-
-.tea {
+.tea-images img {
     width: 300px;
     height: 200px;
 }
 
-.fig-title {
-    padding-top: 10px;
-}
-
-/* LOCATION STYLES */
-
-.location-container {  
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1200px;
-    height: 500px;
-    margin: 0 auto;
+#store-locations {
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
-    padding-top: 5% 
+    margin: 0 auto;
+    width: 80%;
+    height: 500px;
+    padding: 0 10px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.locations-tile {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+#store-locations h2 {
+    padding-top: 70px;
+    padding-bottom: 40px;
 }
-
-.downtown-box,
-.east-bayside-box,
-.oakdale-box {
-    opacity: 0.75;
-    height: 300px;
-    padding: 0;
-    background-color: black;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-}
-
-/* CONTACT STYLES */
-
-.contact-wrap {
-    height: 200px;
+#location-container {
     width: 100%;
-    margin-top: 0 auto;
-    padding-top: 20px; 
+    display: flex;
 }
 
-h5 {
+.location {
+    justify-content: space-between;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#contact-info {
+    padding-top: 30px;
     padding-bottom: 20px;
-    padding-top: 20px;
 }
-
-/* FOOTER STYLES */
 
 footer {
-    float: left;
-    padding-left: 20px;
-    padding-top: 50px;
+    text-align: left;
+    margin-left: 10px;
 }
